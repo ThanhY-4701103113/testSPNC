@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học tập cùng Ý</title>
+  <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kt" onclick="addt()">Kiểm tra</div>
+  <div class="kq" onclick="addt()">✔ Bạn đã đúng 0/3</div>
+  <section class="cau-hoi d-none">
+    <div class="nd-ch">
+      <p class="noidungcauhoi"></p>
+    </div>
+    <div class="ctl">
+      <button id="cl1" value="1" class="da" role="button">
+        
+      </button>
+      <button id="cl2" value="2" class="da" role="button">
+        
+      </button>
+      <button id="cl3" value="3" class="da" role="button">
+        
+      </button>
+      <button id="cl4" value="4" class="da" role="button">
+        
+      </button>
+    </div>
+    <button onclick="addt()" class="back">
+      Trở về
+    </button>
+  </section>
+  <div class="thongbao d-none">
+    <div class="true">
+      <div class="checkmark">✔</div>
+      <div class="checkx">x</div>
+      <div class="hientb"></div>
+      <div class="checktrue">Bạn đã đúng 1/3</div>
+    </div>
+  </div>
+  <a-scene
+    vr-mode-ui="enabled: false;"
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+  >
+    <a-nft 
+      type="nft" 
+      url="Model/C5_12-1"       
+      smooth="true" 
+      smoothCount="100" 
+      smoothTolerance="0.005" 
+      smoothThreshold="100">
+      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
+      <a-image src="#pbc" position="0 0 0" width="500" height="500"></a-image>
+      </a-entity>
+    </a-nft>
+    <a-nft 
+      type="nft" 
+      url="Model/C5_12-2"
+      smooth="true" 
+      smoothCount="100" 
+      smoothTolerance="0.005" 
+      smoothThreshold="100"
+      >
+      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
+        <a-image src="#pct" position="0 0 0" width="500" height="500"></a-image>
+      </a-entity>
+    </a-nft>
+    <a-nft 
+      type="nft" 
+      url="Model/C5_12-3"
+      smooth="true" 
+      smoothCount="100" 
+      smoothTolerance="0.005" 
+      smoothThreshold="100"
+      >
+      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
+        <a-image src="#pct" position="0 0 0" width="500" height="500"></a-image>
+      </a-entity>
+    </a-nft>
+    <a-nft 
+      type="nft" 
+      url="Model/C5_12-4"
+      smooth="true" 
+      smoothCount="100" 
+      smoothTolerance="0.005" 
+      smoothThreshold="100"
+      >
+      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
+        <a-image src="#pct" position="0 0 0" width="500" height="500"></a-image>
+      </a-entity>
+    </a-nft>
+    <a-nft 
+      type="nft" 
+      url="Model/C5_12-5"
+      smooth="true" 
+      smoothCount="100" 
+      smoothTolerance="0.005" 
+      smoothThreshold="100"
+      >
+      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
+        <a-image src="#pct" position="0 0 0" width="500" height="500"></a-image>
+      </a-entity>
+    </a-nft>
+    <a-assets>
+      <img id="pbc" src="Object/PhanBoiChau.png">
+      <img id="pct" src="Object/PhanChauTrinh.png">
+    </a-assets>
+    <!-- Camera entity -->
+    <a-entity camera></a-entity>
+  </a-scene>
+
+  <script src="index.js">
+  </script>
+</body>
+</html>
