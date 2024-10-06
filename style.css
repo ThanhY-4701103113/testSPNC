@@ -61,7 +61,7 @@
     font-weight: 500;
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9); 
 }
-.da:hover{
+.da:active{
     background-color: #ffffff;
 }
 .back{

@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="kt" onclick="addt()">Kiểm tra</div>
-  <div class="kq" onclick="addt()">✔ Bạn đã đúng 0/3</div>
+  <div class="kt d-none" onclick="addt()">Kiểm tra</div>
+  <div class="kq d-none" onclick="addt()">✔ Bạn đã đúng 0/3</div>
   <section class="cau-hoi d-none">
     <div class="nd-ch">
       <p class="noidungcauhoi"></p>
@@ -47,7 +47,7 @@
   >
     <a-nft 
       type="nft" 
-      url="Model/C5_12-1"       
+      url="Model/C5_12_1"       
       smooth="true" 
       smoothCount="100" 
       smoothTolerance="0.005" 
@@ -58,7 +58,7 @@
     </a-nft>
     <a-nft 
       type="nft" 
-      url="Model/C5_12-2"
+      url="Model/C5_12_2"
       smooth="true" 
       smoothCount="100" 
       smoothTolerance="0.005" 
@@ -70,7 +70,19 @@
     </a-nft>
     <a-nft 
       type="nft" 
-      url="Model/C5_12-3"
+      url="Model/C5_12_3"
+      smooth="true" 
+      smoothCount="100" 
+      smoothTolerance="0.005" 
+      smoothThreshold="100"
+      >
+      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
+        <a-image src="#naq" position="0 0 0" width="500" height="500"></a-image>
+      </a-entity>
+    </a-nft>
+    <a-nft 
+      type="nft" 
+      url="Model/C5_12_4"
       smooth="true" 
       smoothCount="100" 
       smoothTolerance="0.005" 
@@ -82,19 +94,7 @@
     </a-nft>
     <a-nft 
       type="nft" 
-      url="Model/C5_12-4"
-      smooth="true" 
-      smoothCount="100" 
-      smoothTolerance="0.005" 
-      smoothThreshold="100"
-      >
-      <a-entity id="box-and-text" position="200 0 -200" rotation="-90 0 0" scale="1 1 1">
-        <a-image src="#pct" position="0 0 0" width="500" height="500"></a-image>
-      </a-entity>
-    </a-nft>
-    <a-nft 
-      type="nft" 
-      url="Model/C5_12-5"
+      url="Model/C5_12_5"
       smooth="true" 
       smoothCount="100" 
       smoothTolerance="0.005" 
@@ -107,6 +107,7 @@
     <a-assets>
       <img id="pbc" src="Object/PhanBoiChau.png">
       <img id="pct" src="Object/PhanChauTrinh.png">
+      <img id="naq" src="Object/C5_12_3.png">
     </a-assets>
     <!-- Camera entity -->
     <a-entity camera></a-entity>

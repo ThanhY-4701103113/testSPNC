@@ -131,6 +131,25 @@ const questions = [
     question: "Năm 1925, Phan Châu Trinh bị Pháp bắt, nhưng sau đó ông tiếp tục làm gì?",
     answers: ["A. Vận động vũ trang", "B. Hoạt động giáo dục", "C. Lập đảng chính trị", "D. Lãnh đạo phong trào chống Pháp"],
     correct: 2 // Đáp án đúng là "B. Hoạt động giáo dục"
+  },
+  // Topic 3 - Nguyễn Ái Quốc
+  {
+    topic: 3,
+    question: "Quốc tế Cộng sản được thành lập vào năm nào?",
+    answers: ["A. 1917", "B. 1924", "C. 1919", "D. 1930"],
+    correct: 3 // Đáp án đúng là "C. 1919"
+  },
+  {
+    topic: 3,
+    question: "Nguyễn Ái Quốc đề nghị gửi lời kêu gọi đến các dân tộc thuộc địa tại đại hội nào?",
+    answers: ["A. Đại hội IV", "B. Đại hội III", "C. Đại hội V", "D. Đại hội VI"],
+    correct: 3 // Đáp án đúng là "C. Đại hội V"
+  },
+  {
+    topic: 3,
+    question: "Nguyễn Ái Quốc đã tố cáo điều gì về thực dân Pháp tại phiên họp thứ 25 của Đại hội V?",
+    answers: ["A. Tham nhũng", "B. Cướp đoạt ruộng đất của nông dân", "C. Khủng bố chính trị", "D. Tội ác chiến tranh"],
+    correct: 2 // Đáp án đúng là "B. Cướp đoạt ruộng đất của nông dân"
   }
 ];
 
@@ -145,7 +164,7 @@ function loadQuestionsByTopic(tpic) {
   if (currentTopicQuestions.length > 0) {
     loadQuestion(currentTopicQuestions[currentQuestionIndex]);
   } else {
-    alert("Không có câu hỏi nào cho topic này!");
+    
   }
 }
 function loadQuestion(question) {
